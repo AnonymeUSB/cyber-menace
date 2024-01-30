@@ -39,21 +39,20 @@
 }
 
 .button:before {
-    width: 10% !important;
+    border-radius: 10px;
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    height: 0;
-    z-index: -1;
-    background-color: #be2121;
-    transition: width 0.3s ease;
+    left: 0; /* Modifiez ici pour résoudre le débordement à gauche */
+    width: 0;
+    height: 100%;
+    background-color: rgba(77, 130, 53, 0.37);
+    transition: width 0.5s ease;
 }
 
 .button:hover:before {
-    width: 100% !important;
+    width: 100%;
 }
-
 #board {
     position: fixed;
     top: 10%;
