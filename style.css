@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "CL";
+    src: url("./Coves\ Light.otf");
+}
+
+@font-face {
+    font-family: "CB";
+    src: url("./Coves\ Bold.otf");
+}
+
 #fond {
     position: fixed;
     top: 0;
@@ -26,6 +36,7 @@
 }
 
 .button {
+    font-family: CB;
     padding: 1%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -54,6 +65,8 @@
     width: 100%;
 }
 #board {
+    font-family: 'CL';
+    text-align: center;
     position: fixed;
     top: 10%;
     left: 33%;
