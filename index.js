@@ -1,6 +1,6 @@
 // Importer la bibliothèque Three.js
 import * as THREE from 'three';
-import { GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 // Créer une scène, une caméra et un rendu
 const scene = new THREE.Scene();
@@ -11,7 +11,7 @@ document.body.appendChild(renderer.domElement);
 
 // Charger le modèle GLB
 const loader = new GLTFLoader();
-loader.load('chemin/vers/scene.glb', (gltf) => {
+loader.load('https://partyhost.fr/scene4.glb', (gltf) => {
   // Ajouter le modèle à la scène
   scene.add(gltf.scene);
 
