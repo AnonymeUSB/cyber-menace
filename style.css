@@ -1,0 +1,43 @@
+#fond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*#cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    background-color: #222;
+}*/
+
+#container {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    color: #ddd;
+    width: 20%;
+    text-align: center;
+}
+
+.button {
+    padding: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    background: rgba( 100, 100, 100, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(77, 130, 53, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    
+}
