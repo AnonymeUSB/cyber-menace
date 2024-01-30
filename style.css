@@ -18,7 +18,7 @@
 
 #container {
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 10%;
     color: #ddd;
     width: 20%;
@@ -38,6 +38,40 @@
     cursor: pointer;
 }
 
-.button:hover {
-    
+.button:before {
+    width: 10% !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    z-index: -1;
+    background-color: #be2121;
+    transition: width 0.3s ease;
+}
+
+.button:hover:before {
+    width: 100% !important;
+}
+
+#board {
+    position: fixed;
+    top: 10%;
+    left: 33%;
+    width: 55%;
+    height: 50%;
+    color: #ddd;
+    padding: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    background: rgba( 100, 100, 100, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(77, 130, 53, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px; 
+}
+
+#s2 {
+    display: none;
 }
