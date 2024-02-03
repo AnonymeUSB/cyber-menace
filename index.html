@@ -10,19 +10,40 @@
   <img src="./image.png" id="fond">
   <div id="cover"></div>
   <div id="container">
-    <div class="button">Network attack</div>
-    <div class="button">Phishing</div>
-    <div class="button">coming soon</div>
-    <div class="button">coming soon</div>
-    <div class="button">coming soon</div>
+    <div class="button" onclick="next(1)">Introduction</div>
+    <div class="button" onclick="next(2)">Capture de paquets</div>
+    <div class="button" onclick="next(3)">Phishing</div>
+    <div class="button" onclick="next(4)">Empoisonnement de DNS</div>
+    <div class="button" onclick="next(5)">Conclusion</div>
   </div>
 </body>
 <div id="board">
   <div id="s1">
-    <h1>Network attack</h1>
-    <p>Lorem ipsun</p>  
+    <h1>Introduction</h1>
+    <p><b>Sommaire</b> : </p>
+    <p><em>1.</em> Introduction</p>
+    <p><em>2.</em> Capture de paquets</p>
+    <p><em>3.</em> Phishing</p>
+    <p><em>4.</em> Empoisonnement de DNS</p>
+
   <div id="s2">
-    Lorem Ipsum
+    <h1>Capture de paquets -Réseau-</h1>
+    <p>L'Analyse de paquet réseau consiste à capturer tout les paquets entrant ou sortant de ce dernier</p>
+    <div class="btnView">Voir</div>
   </div>
+  <div id="s3">
+    <h1>Phishing</h1>
+    <p>Le Phishing est une technique consistant à se faire passer pour un tier de confiance de la victime, dans le but de lui soutiré des informations ou autres.</p>
+    <div class="btnView">Voir</div>
+  </div>
+  <div id="s4">
+    <h1>Empoisonnement de DNS</h1>
+    <p>L'Empoisonnement de cache DNS est une technique constistant à altérer ce dernier afin de pourvoir aiguiller la victime vers un autre site en parallèle en toute trasparence à chaque fois que ce dernier cherchera à se connecté à un site particulier en passant par son nom de domaine.</p>
+    <div class="btnView">Voir</div>
+  </div>
+  <div id="s5">
+    <h1>Conclusion</h1>
+  </div>
+  <script src="./index.js"></script>
 </div>
 </html>

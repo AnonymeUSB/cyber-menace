@@ -47,6 +47,7 @@
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .button:before {
@@ -84,6 +85,40 @@
     border-radius: 10px; 
 }
 
-#s2 {
-    display: none;
+.btnView {
+    font-family: CB;
+    margin-top: 5%;
+    padding: 1.2%;
+    margin-left: 43%;
+    margin-right: 43%;
+    background: rgba( 100, 100, 100, 0.25 );
+    box-shadow: 0;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.5s ease;
 }
+
+.btnView:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px 0 rgba(77, 130, 53, 0.37);
+}
+
+.btnView:hover:before {
+    width: 100%;
+}
+
+.btnView:before {
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Modifiez ici pour résoudre le débordement à gauche */
+    width: 0;
+    height: 100%;
+    background-color: rgba(77, 130, 53, 0.37);
+    transition: width 0.5s ease;
+}
+

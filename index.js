@@ -1,36 +1,18 @@
-// Importer la bibliothèque Three.js
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+const s1 = document.querySelector("#s1")
+const s2 = document.querySelector("#s2")
+const s3 = document.querySelector("#s3")
+const s4 = document.querySelector("#s4")
+const s5 = document.querySelector("#s5")
 
-// Créer une scène, une caméra et un rendu
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+s1.style.display = "none"
+s2.style.display = "none"
+s3.style.display = "none"
+s4.style.display = "none"
+s5.style.display = "none"
 
-// Charger le modèle GLB
-const loader = new GLTFLoader();
-loader.load('https://partyhost.fr/scene4.glb', (gltf) => {
-  // Ajouter le modèle à la scène
-  scene.add(gltf.scene);
-
-  // Vous pouvez accéder aux objets, matériaux, animations, etc. du modèle ici
-  // Exemple: gltf.scene, gltf.animations, gltf.materials, etc.
-});
-
-// Positionner la caméra
-camera.position.z = 5;
-
-// Animation
-const animate = () => {
-  requestAnimationFrame(animate);
-
-  // Ajouter des animations, des mises à jour, etc. ici si nécessaire
-
-  // Rendre la scène
-  renderer.render(scene, camera);
-};
-
-// Lancer l'animation
-animate();
+function next(number) {
+  var section = document.querySelector("#s" + number);
+  var sectionList = [s1, s2, s3, s4, s5]
+  document.querySelector("#board").innerHTML = sectionList[number-1].innerHTML;
+  section.style.display = "block"
+}
