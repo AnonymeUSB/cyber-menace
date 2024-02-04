@@ -24,5 +24,5 @@ function popUp(number) {
     2 : "fakebook.mp4", 
     3 : "dns.mp4"
   };
-  window.open(popup[number], "Popup", 'width=400,height=150,status=yes,scrollbars=yes');
+  window.open(popup[number], "Popup", 'width=10000,height=10000,status=yes,scrollbars=yes');
 }
