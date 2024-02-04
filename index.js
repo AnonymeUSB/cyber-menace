@@ -16,3 +16,13 @@ function next(number) {
   document.querySelector("#board").innerHTML = sectionList[number-1].innerHTML;
   section.style.display = "block"
 }
+
+
+function popUp(number) {
+  var popup = { 
+    1 : "wireshark.mp4", 
+    2 : "fakebook.mp4", 
+    3 : "dns.mp4"
+  };
+  window.open(popup[number], "Popup", 'width=400,height=150,status=yes,scrollbars=yes');
+}
